@@ -65,20 +65,7 @@
 
 <div align="center">
 
-### 🚀 [Click here to see the LIVE Animated Pipeline →](https://xoxo893.github.io/xoxo893/pipeline/)
-
-*Fully animated end-to-end data engineering pipeline with flowing data particles*
-
-| Layer | Technology |
-|:---:|:---|
-| 🗂️ **Sources** | MySQL · Oracle · REST APIs · Kafka Streams · CSV/Parquet |
-| 🔄 **Ingestion** | Azure Data Factory · Apache Kafka · Apache Airflow |
-| 🗄️ **Bronze** | ADLS Gen2 · AWS S3 — Raw unprocessed data |
-| ✅ **Quality** | Null checks · Schema validation · Deduplication |
-| 🔧 **Silver** | PySpark · Azure Databricks — Cleaned & transformed |
-| 🏆 **Gold** | Star Schema · Business Layer — Aggregated & enriched |
-| 📊 **Serving** | Power BI · Tableau · BigQuery · Azure Synapse |
-| 🤖 **ML** | Feature Engineering · Model Scoring Pipelines |
+<img src="pipeline.svg" alt="Animated Data Engineering Pipeline" width="100%"/>
 
 </div>
 
