@@ -1,0 +1,430 @@
+<svg width="800" height="620" viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <defs>
+    <!-- Animated gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+
+    <!-- Node gradients -->
+    <linearGradient id="srcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2a5e"/>
+      <stop offset="100%" style="stop-color:#1a1f3a"/>
+    </linearGradient>
+    <linearGradient id="ingestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a50"/>
+      <stop offset="100%" style="stop-color:#0f2030"/>
+    </linearGradient>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2a0f"/>
+      <stop offset="100%" style="stop-color:#2a1f0f"/>
+    </linearGradient>
+    <linearGradient id="qualityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3a1e"/>
+      <stop offset="100%" style="stop-color:#0a2a14"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#252040"/>
+      <stop offset="100%" style="stop-color:#1a1f2a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2e0f"/>
+      <stop offset="100%" style="stop-color:#2a2010"/>
+    </linearGradient>
+    <linearGradient id="serveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#280a3a"/>
+      <stop offset="100%" style="stop-color:#1a0a2a"/>
+    </linearGradient>
+    <linearGradient id="mlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2230"/>
+      <stop offset="100%" style="stop-color:#0a1520"/>
+    </linearGradient>
+    <linearGradient id="analyticsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3010"/>
+      <stop offset="100%" style="stop-color:#152208"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glowBlue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Particle marker -->
+    <circle id="particle" r="3" fill="#00d4ff">
+      <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- BACKGROUND -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect width="800" height="620" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid dots -->
+  <g opacity="0.04">
+    <circle cx="80"  cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="80"  r="1" fill="#00d4ff"/>
+    <circle cx="80"  cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="160" r="1" fill="#00d4ff"/>
+    <circle cx="80"  cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="240" r="1" fill="#00d4ff"/>
+    <circle cx="80"  cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="320" r="1" fill="#00d4ff"/>
+    <circle cx="80"  cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="400" r="1" fill="#00d4ff"/>
+    <circle cx="80"  cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="480" r="1" fill="#00d4ff"/>
+    <circle cx="80"  cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="160" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="240" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="320" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="400" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="480" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="560" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="640" cy="560" r="1" fill="#00d4ff"/>
+    <circle cx="720" cy="560" r="1" fill="#00d4ff"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- TITLE -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <text x="400" y="30" text-anchor="middle" font-family="'Segoe UI',sans-serif"
+        font-size="13" font-weight="700" fill="#00d4ff" letter-spacing="3">
+    ⚡ END-TO-END DATA ENGINEERING PIPELINE
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ROW 1 — SOURCE NODES -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- DB Node -->
+  <g filter="url(#softGlow)">
+    <rect x="30" y="48" width="140" height="54" rx="8" fill="url(#srcGrad)" stroke="#3b5bdb" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <text x="100" y="68" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#a5b4fc">🗃️</text>
+    <text x="100" y="83" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#a5b4fc">Databases</text>
+    <text x="100" y="95" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#6b7fc4">MySQL · Oracle</text>
+  </g>
+
+  <!-- API Node -->
+  <g filter="url(#softGlow)">
+    <rect x="210" y="48" width="140" height="54" rx="8" fill="url(#srcGrad)" stroke="#3b5bdb" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="280" y="68" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#a5b4fc">🌐</text>
+    <text x="280" y="83" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#a5b4fc">REST APIs</text>
+    <text x="280" y="95" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#6b7fc4">JSON · XML</text>
+  </g>
+
+  <!-- Streams Node -->
+  <g filter="url(#softGlow)">
+    <rect x="450" y="48" width="140" height="54" rx="8" fill="url(#srcGrad)" stroke="#3b5bdb" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="520" y="68" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#a5b4fc">📡</text>
+    <text x="520" y="83" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#a5b4fc">Streams</text>
+    <text x="520" y="95" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#6b7fc4">Events · Logs</text>
+  </g>
+
+  <!-- Files Node -->
+  <g filter="url(#softGlow)">
+    <rect x="630" y="48" width="140" height="54" rx="8" fill="url(#srcGrad)" stroke="#3b5bdb" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="700" y="68" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#a5b4fc">📂</text>
+    <text x="700" y="83" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#a5b4fc">File Systems</text>
+    <text x="700" y="95" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#6b7fc4">CSV · Parquet</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- FAN-IN ANIMATED PATHS (sources → ingest) -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- Path from DB -->
+  <path d="M100,102 Q100,148 400,148" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="1.0s" repeatCount="indefinite"/>
+  </path>
+  <!-- Particle on DB path -->
+  <circle r="3.5" fill="#00d4ff" opacity="0">
+    <animateMotion dur="1.0s" repeatCount="indefinite" begin="0s">
+      <mpath xlink:href="#path-db"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <path id="path-db" d="M100,102 Q100,148 400,148" fill="none"/>
+
+  <!-- Path from API -->
+  <path d="M280,102 Q280,148 400,148" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.5" fill="#00d4ff" opacity="0">
+    <animateMotion dur="1.2s" repeatCount="indefinite" begin="0.3s">
+      <mpath xlink:href="#path-api"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <path id="path-api" d="M280,102 Q280,148 400,148" fill="none"/>
+
+  <!-- Path from Streams -->
+  <path d="M520,102 Q520,148 400,148" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.5" fill="#00d4ff" opacity="0">
+    <animateMotion dur="0.9s" repeatCount="indefinite" begin="0.1s">
+      <mpath xlink:href="#path-stream"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="0.9s" repeatCount="indefinite" begin="0.1s"/>
+  </circle>
+  <path id="path-stream" d="M520,102 Q520,148 400,148" fill="none"/>
+
+  <!-- Path from Files -->
+  <path d="M700,102 Q700,148 400,148" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.5">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="1.1s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.5" fill="#00d4ff" opacity="0">
+    <animateMotion dur="1.1s" repeatCount="indefinite" begin="0.5s">
+      <mpath xlink:href="#path-files"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.1s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <path id="path-files" d="M700,102 Q700,148 400,148" fill="none"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ROW 2 — INGESTION LAYER -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <g filter="url(#glowBlue)">
+    <rect x="250" y="155" width="300" height="54" rx="10" fill="url(#ingestGrad)" stroke="#0ea5e9" stroke-width="1.5">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.5;2.2;1.5" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="400" y="176" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#7dd3fc">🔄</text>
+    <text x="400" y="191" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#7dd3fc">Ingestion Layer</text>
+    <text x="400" y="202" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#4a9ab5">Azure ADF · Kafka · Airflow</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- VERTICAL ARROW: Ingest → Bronze (animated dot) -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <line x1="400" y1="209" x2="400" y2="248" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="394,246 400,256 406,246" fill="#00d4ff" opacity="0.8"/>
+  <!-- animated dot -->
+  <circle r="3.5" fill="#00d4ff">
+    <animate attributeName="cy" values="210;254" dur="1.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" r="3.5" fill="#00d4ff">
+    <animate attributeName="cy" values="210;254" dur="1.0s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ROW 3 — BRONZE -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <g filter="url(#softGlow)">
+    <rect x="250" y="258" width="300" height="54" rx="10" fill="url(#bronzeGrad)" stroke="#d97706" stroke-width="1.5">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3.5s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="400" y="278" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#fcd34d">🗄️</text>
+    <text x="400" y="294" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#fcd34d">Bronze — Raw Zone</text>
+    <text x="400" y="305" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#b08c30">ADLS Gen2 · AWS S3</text>
+  </g>
+
+  <!-- VERTICAL ARROW: Bronze → Quality -->
+  <line x1="400" y1="312" x2="400" y2="351" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="394,349 400,359 406,349" fill="#00d4ff" opacity="0.8"/>
+  <circle r="3.5" fill="#f59e0b">
+    <animate attributeName="cy" values="313;356" dur="1.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" r="3.5" fill="#f59e0b">
+    <animate attributeName="cy" values="313;356" dur="1.0s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ROW 4 — QUALITY + SILVER (side by side) -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- Quality -->
+  <g filter="url(#softGlow)">
+    <rect x="150" y="361" width="175" height="54" rx="8" fill="url(#qualityGrad)" stroke="#059669" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="0.9s" repeatCount="indefinite"/>
+    </rect>
+    <text x="237" y="381" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#6ee7b7">✅</text>
+    <text x="237" y="396" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#6ee7b7">Data Quality</text>
+    <text x="237" y="407" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#3a9a6e">Null · Schema · Dedup</text>
+  </g>
+
+  <!-- Arrow: Quality → Silver -->
+  <line x1="325" y1="388" x2="370" y2="388" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="368,382 378,388 368,394" fill="#00d4ff" opacity="0.8"/>
+  <!-- Animated dot on horizontal -->
+  <circle cy="388" r="3" fill="#00d4ff">
+    <animate attributeName="cx" values="326;370" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="0.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Silver -->
+  <g filter="url(#softGlow)">
+    <rect x="378" y="361" width="175" height="54" rx="8" fill="url(#silverGrad)" stroke="#6366f1" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="465" y="381" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#c4b5fd">🔧</text>
+    <text x="465" y="396" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#c4b5fd">Silver — Clean</text>
+    <text x="465" y="407" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#7a75b5">PySpark · Databricks</text>
+  </g>
+
+  <!-- VERTICAL ARROW: Silver → Gold -->
+  <line x1="400" y1="415" x2="400" y2="454" stroke="#00d4ff" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="394,452 400,462 406,452" fill="#00d4ff" opacity="0.8"/>
+  <circle r="3.5" fill="#6366f1">
+    <animate attributeName="cy" values="416;457" dur="1.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" r="3.5" fill="#6366f1">
+    <animate attributeName="cy" values="416;457" dur="1.0s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ROW 5 — GOLD -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <g filter="url(#glowGold)">
+    <rect x="250" y="463" width="300" height="54" rx="10" fill="url(#goldGrad)" stroke="#f59e0b" stroke-width="1.8">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.8s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="1.8;2.5;1.8" dur="2.8s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="400" y="483" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#fde68a">🏆</text>
+    <text x="400" y="498" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#fde68a">Gold — Curated</text>
+    <text x="400" y="509" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#c8980a">Star Schema · Business Layer</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- FAN-OUT PATHS (Gold → 3 outputs) -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- Gold → Serving -->
+  <path d="M400,517 Q400,548 175,548" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="1.0s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.5" fill="#a855f7" opacity="0">
+    <animateMotion dur="1.0s" repeatCount="indefinite" begin="0s">
+      <mpath xlink:href="#path-serve"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.0s" repeatCount="indefinite"/>
+  </circle>
+  <path id="path-serve" d="M400,517 Q400,548 175,548" fill="none"/>
+
+  <!-- Gold → ML -->
+  <path d="M400,517 L400,548" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.5" fill="#06b6d4" opacity="0">
+    <animateMotion dur="1.2s" repeatCount="indefinite" begin="0.3s">
+      <mpath xlink:href="#path-ml"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <path id="path-ml" d="M400,517 L400,548" fill="none"/>
+
+  <!-- Gold → Analytics -->
+  <path d="M400,517 Q400,548 625,548" fill="none" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" from="0" to="-50" dur="0.9s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3.5" fill="#84cc16" opacity="0">
+    <animateMotion dur="0.9s" repeatCount="indefinite" begin="0.2s">
+      <mpath xlink:href="#path-analytics"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="0.9s" repeatCount="indefinite" begin="0.2s"/>
+  </circle>
+  <path id="path-analytics" d="M400,517 Q400,548 625,548" fill="none"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ROW 6 — CONSUMPTION (3 nodes) -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- Serving -->
+  <g filter="url(#softGlow)">
+    <rect x="60" y="555" width="155" height="54" rx="8" fill="url(#serveGrad)" stroke="#a855f7" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="137" y="575" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#e9d5ff">📊</text>
+    <text x="137" y="590" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#e9d5ff">Serving</text>
+    <text x="137" y="601" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#8855b0">Power BI · Tableau</text>
+  </g>
+
+  <!-- ML Pipelines -->
+  <g filter="url(#softGlow)">
+    <rect x="323" y="555" width="155" height="54" rx="8" fill="url(#mlGrad)" stroke="#06b6d4" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="2.1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="400" y="575" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#a5f3fc">🤖</text>
+    <text x="400" y="590" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#a5f3fc">ML Pipelines</text>
+    <text x="400" y="601" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#3a8090">Features · Scoring</text>
+  </g>
+
+  <!-- Analytics -->
+  <g filter="url(#softGlow)">
+    <rect x="585" y="555" width="155" height="54" rx="8" fill="url(#analyticsGrad)" stroke="#84cc16" stroke-width="1.2">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="662" y="575" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="16" fill="#d9f99d">📈</text>
+    <text x="662" y="590" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="10" font-weight="700" fill="#d9f99d">Analytics</text>
+    <text x="662" y="601" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="9" fill="#5a8a10">BigQuery · Synapse</text>
+  </g>
+
+</svg>
