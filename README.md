@@ -61,6 +61,29 @@
 
 ---
 
+## ⚡ My Data Pipeline Architecture
+
+<div align="center">
+
+### 🚀 [Click here to see the LIVE Animated Pipeline →](https://xoxo893.github.io/xoxo893/pipeline/)
+
+*Fully animated end-to-end data engineering pipeline with flowing data particles*
+
+| Layer | Technology |
+|:---:|:---|
+| 🗂️ **Sources** | MySQL · Oracle · REST APIs · Kafka Streams · CSV/Parquet |
+| 🔄 **Ingestion** | Azure Data Factory · Apache Kafka · Apache Airflow |
+| 🗄️ **Bronze** | ADLS Gen2 · AWS S3 — Raw unprocessed data |
+| ✅ **Quality** | Null checks · Schema validation · Deduplication |
+| 🔧 **Silver** | PySpark · Azure Databricks — Cleaned & transformed |
+| 🏆 **Gold** | Star Schema · Business Layer — Aggregated & enriched |
+| 📊 **Serving** | Power BI · Tableau · BigQuery · Azure Synapse |
+| 🤖 **ML** | Feature Engineering · Model Scoring Pipelines |
+
+</div>
+
+---
+
 ## 🛠️ My Tech Arsenal
 
 <div align="center">
@@ -233,4 +256,3 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0D1117&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=00D4FF&animation=fadeIn"/>
 </div>
-
